@@ -1,5 +1,44 @@
+/* body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+} */
+
+/* Global reset + base typography */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color: #f7f6f3; /* soft off-white */
+  color: #2f2f2f;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Page headings */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #3b2f2f;
+  margin-top: 0;
+}
+
+/* Paragraphs */
+p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+/* Utility container (optional but very nice) */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
 }
 

@@ -7,9 +7,8 @@ import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
   return (
-    <div style={{ padding: 16 }}>
+    <div className="container">
       <NavBar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
