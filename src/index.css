@@ -10,10 +10,25 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background-color: #f7f6f3; /* soft off-white */
-  color: #2f2f2f;
+  /* Theme variables provide a calm coffee aesthetic */
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
+}
+
+:root {
+  /* Palette */
+  --bg: #f7f4ef; /* warm off-white */
+  --surface: #fff; /* cards, nav */
+  --text: #2e2a28; /* main body text */
+  --heading: #3b2f2f; /* headings */
+  --accent: #6b4f3f; /* deep coffee brown */
+  --accent-2: #a67c52; /* lighter caramel */
+  --muted: #6b6b6b; /* muted text */
+  --radius: 12px;
+  --card-shadow: 0 6px 18px rgba(31, 23, 18, 0.06);
+  --max-width: 900px;
 }
 
 /* Links */
@@ -24,8 +39,9 @@ a {
 
 /* Page headings */
 h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-weight: 600;
-  color: #3b2f2f;
+  color: var(--heading);
   margin-top: 0;
 }
 
@@ -37,7 +53,7 @@ p {
 
 /* Utility container (optional but very nice) */
 .container {
-  max-width: 720px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 16px;
 }

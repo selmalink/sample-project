@@ -1,7 +1,7 @@
 .nav-container {
   width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
+  background: var(--surface);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
 }
 
 .navbar {
@@ -25,6 +25,7 @@
   height: 36px;
   width: auto;
   display: block;
+  filter: none;
 }
 
 .hamburgerButton {
@@ -35,12 +36,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #6b4f3f;
+  color: var(--accent);
 }
 
 .ham-icon {
   transition: transform 200ms ease;
-  color: #6b4f3f;
+  color: var(--accent);
 }
 
 .ham-icon .line {
@@ -68,13 +69,13 @@
 
 .navigator {
   text-decoration: none;
-  color: #6b4f3f;
+  color: var(--accent);
   font-weight: 500;
   padding: 6px 0;
 }
 
 .navigator.active {
-  border-bottom: 2px solid #6b4f3f;
+  border-bottom: 2px solid var(--accent);
 }
 
 /* Mobile styles */
@@ -87,14 +88,14 @@
     position: absolute;
     right: 16px;
     top: 64px;
-    background: white;
+    background: var(--surface);
     flex-direction: column;
     gap: 8px;
     padding: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    border-radius: calc(var(--radius) - 4px);
     display: none;
-    min-width: 140px;
+    min-width: 160px;
   }
 
   .menuNav.showMenu {

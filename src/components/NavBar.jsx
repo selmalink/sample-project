@@ -77,6 +77,15 @@ export default function NavBar() {
                 About
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/map"
+                className={({ isActive }) => "navigator" + (isActive ? " active" : "")}
+                onClick={() => setHamburgerOpen(false)}
+              >
+                Map
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
