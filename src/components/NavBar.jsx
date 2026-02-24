@@ -23,8 +23,8 @@ export default function NavBar() {
     <div className="nav-container">
       <div className="navbar">
         <NavLink to="/" className="logo" onClick={() => setHamburgerOpen(false)}>
-          {/* Use the project's Vite logo if available; falls back to text */}
-          <img src="/vite.svg" alt="Site logo" className="logo-img" />
+          {/* Use the project's favicon if available; falls back to text */}
+          <img src="/favicon.ico" alt="Site logo" className="logo-img" />
         </NavLink>
 
         <nav>
